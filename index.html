@@ -1,8 +1,122 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        body {
-            background:black;
-        }
-    </style>
+  <head>
+    <title>CNC Quiz</title>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div id="quiz-container">
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <h1 class="mb-0">CNC Quiz</h1>
+              <div id="pdf">
+                <a href="" class="btn btn-primary" target="_blank">PDF</a>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <button id="theme-toggle" class="btn btn-outline-primary">
+                  <i class="fas fa-moon"></i>
+                </button>
+                <select id="quiz-selector" class="form-select" style="max-width: 400px;">
+                  <option value="0">Skärteknik</option>
+                  <option value="1">Materiallära</option>
+                  <option value="2">Automation & Produktionsövervakning</option>
+                  <option value="3">Matrialkunskap</option>
+                  <option value="4">CNC Teknik Svarv</option>
+                  <option disabled>-- Arbetsmiljö --</option>
+                  <option value="5">Arbetsmiljö och Säkerhet</option>
+                  <option value="6">Arbetsmiljöfaktorer</option>
+                  <option value="7">Utan el stannar Sverige</option>
+                  <option disabled>---</option>
+                  <option value="8">Toleranser</option>
+                  <option value="9">Automation</option>
+                  <option value="10">Kvalitet</option>
+                  <option value="11">Skärteknik (Sandvik)</option>
+                  <option value="12">Produktionsteknik</option>
+                  <option value="13">Mätteknik del A</option>
+                  <option value="14">Mätteknik del B</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-body">
+                <div id="quiz-progress" class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                </div>
+                <h5 id="question-text" class="card-title mb-4"></h5>
+                <div class="confidence-meter d-none">
+                  <button class="confidence-btn" data-level="1">Osäker</button>
+                  <button class="confidence-btn" data-level="2">Ganska säker</button>
+                  <button class="confidence-btn" data-level="3">Helt säker</button>
+                </div>
+                <div id="answers-container" class="d-grid gap-2"></div>
+                <div id="feedback" class="alert mt-3 d-none"></div>
+                <div class="related-topics d-none">
+                  <h6>Relaterade ämnen:</h6>
+                  <div class="links"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between mt-3">
+              <button id="prev-btn" class="btn btn-secondary">Föregående</button>
+              <div class="progress-text">
+                Fråga <span id="current-question">1</span> av <span id="total-questions">0</span>
+              </div>
+              <button id="next-btn" class="btn btn-primary">Nästa</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Översikt</h5>
+                <div id="question-overview" class="mb-3">
+                  <!-- Question dots will be inserted here -->
+                </div>
+                <div class="sidebar-results">
+                  <div class="stats">
+                    <small class="text-muted d-block mb-1">Resultat:</small>
+                    <div class="progress mb-2">
+                      <div id="correct-progress" class="progress-bar bg-success"></div>
+                      <div id="incorrect-progress" class="progress-bar bg-danger"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="results" class="mt-4 d-none">
+          <div class="card">
+            <div class="card-body">
+              <h4>Resultat</h4>
+              <p>Ditt resultat: <span id="score"></span></p>
+              <div class="stats mb-3">
+                <p>Tid: <span id="total-time">00:00</span></p>
+                <p>Genomsnittlig tid per fråga: <span id="avg-time">00:00</span></p>
+                <div class="progress mb-2">
+                  <div id="correct-progress" class="progress-bar bg-success"></div>
+                  <div id="incorrect-progress" class="progress-bar bg-danger"></div>
+                </div>
+              </div>
+              <button id="show-answers" class="btn btn-info mb-2">Visa svar</button>
+              <button id="restart-btn" class="btn btn-primary">Börja om</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quizes.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
