@@ -716,7 +716,7 @@ const quizes = [
     },
     {
         name: "Matrialkunskap",
-        source: "",
+        source: "./pdf/Materialkunskap Kc(Faktahäfte).pdf",
         questions: [
             {
                 question: 'Vad menas med konstruktionsmaterial?',
@@ -2971,7 +2971,7 @@ const quizes = [
     },
     {
       name: "Arbetsmiljö och säkerhet",
-      source: "",
+      source: "./pdf/Arbetsmiljö och säkerhet - Faktabok.pdf",
       questions: [
         {
             "question": "Vad ingår i begreppet miljö enligt texten?",
@@ -3470,7 +3470,7 @@ const quizes = [
     },
     {
       name: "Arbetsmiljöfaktorer",
-      source: "",
+      source: "./pdf/Arbetsmiljö och säkerhet - Faktabok.pdf",
       questions: [
         {
             "question": "Vad menas med synergonomi?",
@@ -4364,7 +4364,7 @@ const quizes = [
   },
   {
     name: "Utan el stannar Sverige",
-    source: "",
+    source: "./pdf/Arbetsmiljö och säkerhet - Faktabok.pdf",
     questions: [
       {
           "question": "Vilka är de två största källorna till elproduktion i Sverige idag?",
@@ -4682,7 +4682,7 @@ const quizes = [
   ]
   }, {
     name: "Toleranser",
-    source: "",
+    source: "./pdf/Toleranser Grundläggande begrepp Fakta.pdf",
     questions: [
       {
           "question": "Vad anger en dimensionstolerans på en ritning?",
@@ -5024,7 +5024,7 @@ const quizes = [
   ]
   },{
     name: "Automation",
-    source: "",
+    source: "./pdf/Automation - Fakta.pdf",
     questions: [
       {
         "question": "Nämn tre av de '10 goda skäl att automatisera' som listas i texten.",
@@ -5353,7 +5353,7 @@ const quizes = [
     ]
   }, {
     name: "Kvalitet - från grunden",
-    source: "",
+    source: "./pdf/Kvalitet - från grunden.pdf",
     questions: [
       {
           "question": "Vad menas med 'rätt kvalitet' enligt boken?",
@@ -5550,7 +5550,7 @@ const quizes = [
   ]
   }, {
     name: "Skärteknik",
-    source: "",
+    source: "./pdf/SKÄRTEKNIK.pdf",
     questions: [
       {
           "question": "Vilka tre huvudgrupper av faktorer påverkar valet av skärverktyg och skärdata?",
@@ -6086,7 +6086,7 @@ const quizes = [
   ]
   }, {
     name: "Produktionsteknik",
-    source: "",
+    source: "./pdf/Produktionteknik, Produktionsprocessen - Faktabok (sökbar) - komprimerad.pdf",
     questions: [
       {
           "question": "Vad beskrivs traditionellt som 'länken mellan konstruktion och produktion'?",
