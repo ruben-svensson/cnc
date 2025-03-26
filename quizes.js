@@ -10155,66 +10155,6 @@ const quizes = [
     "longReasoning": "Texten beskriver: 'Innermikrometrar...men alla har tre mätklackar och är därmed självcentrerande.'"
   },
   {
-      "question": "Hur många graderade streck finns det runt mättrumman på innermikrometern i exemplet?",
-        "answers":[
-          {"text": "10", "incorrectReasoning": "Det finns 100"},
-          {"text": "50", "incorrectReasoning":"Det finns 100"},
-          {"text":"100", "incorrectReasoning": null},
-            {"text":"20", "incorrectReasoning":"Det finns 100"}
-        ],
-        "correctAnswer": 2,
-        "shortReasoning":"100 streck",
-        "longReasoning": "Texten säger: 'Runt mättrumman finns 100 streck graderade...'"
-  },
-    {
-    "question": "Vad motsvarar varje streck på mättrumman på innermikrometern i exemplet?",
-    "answers":[
-      {"text": "1 mm", "incorrectReasoning": "Varje streck är 0.005 mm"},
-      {"text":"0.1 mm", "incorrectReasoning": "Varje streck är 0.005 mm"},
-        {"text": "0,005 mm", "incorrectReasoning": null},
-      {"text":"0.01 mm", "incorrectReasoning": "Varje streck är 0.005 mm"}
-    ],
-      "correctAnswer": 2,
-    "shortReasoning": "0,005 mm.",
-    "longReasoning": "Texten säger: '...dessa streck är jämt fördelade och varje streck motsvarar 0,005mm...'"
-  },
-   {
-    "question":"Vad är korrekt avläsning i det första exemplet med innermikrometer (25,10 mm)?",
-    "answers":[
-      {"text": "25,00 mm", "incorrectReasoning": "Se bild och text"},
-      {"text":"25,01 mm", "incorrectReasoning": "Se bild och text"},
-      {"text":"25,10 mm", "incorrectReasoning":null},
-      {"text": "25,11 mm", "incorrectReasoning": "Se bild och text"}
-    ],
-    "correctAnswer": 2,
-    "shortReasoning": "25,10 mm",
-    "longReasoning":"Bilden och förklarande text visar detta. 'Vi får måttet 25 + 0,10 = 25,10 mm.'"
-   },
-  {
-    "question": "Vad är korrekt avläsning i det andra exemplet med innermikrometer (26,40 mm)?",
-    "answers":[
-      {"text": "26,00 mm", "incorrectReasoning": "Se bild och text"},
-      {"text": "26,04 mm", "incorrectReasoning": "Se bild och text"},
-      {"text":"26,40 mm", "incorrectReasoning": null},
-      {"text": "26,44 mm", "incorrectReasoning": "Se bild och text"}
-    ],
-      "correctAnswer": 2,
-    "shortReasoning": "26,40 mm",
-    "longReasoning": "Bilden och förklarande text visar detta. 'Vi får måttet 26 + 0,40 = 26,40 mm.'"
-  },
-    {
-        "question":"Vad är korrekt avläsning i det tredje exemplet med innermikrometer (26,635 mm)?",
-        "answers":[
-          {"text": "26,000 mm", "incorrectReasoning": "Se bild och text, glöm inte +0.5"},
-            {"text": "26,135 mm", "incorrectReasoning": "Se bild och text, glöm inte +0.5"},
-          {"text": "26,500 mm", "incorrectReasoning":"Se bild och text"},
-            {"text": "26,635 mm", "incorrectReasoning": null}
-        ],
-         "correctAnswer": 3,
-        "shortReasoning": "26,635 mm",
-        "longReasoning": "Bilden och förklarande text visar detta. 'Vi får måttet 26 + 0,5 + 0,135 = 26,635 mm.'"
-    },
-  {
     "question": "Vad är en indikator?",
     "answers": [
       { "text": "Ett fast mätdon", "incorrectReasoning": "Indikatorer är *visande* mätdon." },
