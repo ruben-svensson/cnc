@@ -7385,10 +7385,10 @@ const quizes = [
         ],
         "correctAnswer": 1,
         "shortReasoning": "Egenkontroll definieras som att själv jämföra mätvärden mot en känd referens.",
-        "longReasoning": "Enligt texten definieras egenkontroll som just handlingen att själv jämföra mätvärden med en känd referens för att säkerställa noggrannhet. Det är en grundläggande form av kvalitetskontroll och kalibrering."
+        "longReasoning": "Egenkontroll definieras som just handlingen att själv jämföra mätvärden med en känd referens för att säkerställa noggrannhet. Det är en grundläggande form av kvalitetskontroll och kalibrering."
       },
       {
-        "question": "Vilka industrier omfattas av processindustrin enligt texten?",
+        "question": "Vilka industrier omfattas av processindustrin?",
         "answers": [
           { "text": "Bara livsmedelsindustri och läkemedelsindustri", "incorrectReasoning": "Processindustrin omfattar många fler industrier än bara livsmedel och läkemedel." },
           { "text": "Alla industriföretag som förvandlar resurser till nya produkter", "incorrectReasoning": null },
@@ -7400,7 +7400,7 @@ const quizes = [
         "longReasoning": "Texten beskriver processindustrin som omfattande alla industriföretag som förvandlar råmaterial och resurser till nya produkter. Exempel som papper, massa, stål, gruvbrytning, läkemedel, kemi och petroleum nämns."
       },
       {
-        "question": "Vilken typ av I/O-signaler är vanligast inom processindustrin enligt texten?",
+        "question": "Vilken typ av I/O-signaler är vanligast inom processindustrin?",
         "answers": [
           { "text": "Digitala I/O", "incorrectReasoning": "Analoga I/O, särskilt 4-20 mA strömslingor, är vanligare för analoga signaler." },
           { "text": "Analoga I/O", "incorrectReasoning": null },
@@ -7410,18 +7410,6 @@ const quizes = [
         "correctAnswer": 1,
         "shortReasoning": "Analoga I/O, särskilt 4-20 mA strömslingor, nämns som vanliga.",
         "longReasoning": "Texten anger att de flesta I/O inom processindustrin är analoga eller digitala, och att analoga I/O-signaler ofta använder 0-10 V eller 4-20 mA strömslinga, där 4-20 mA strömslinga beskrivs som 'kanske vanligast'."
-      },
-      {
-        "question": "Varför var 4-20 mA strömslingor populära inom processindustrin?",
-        "answers": [
-          { "text": "De var billigare än 0-10V", "incorrectReasoning": "Texten nämner inte kostnaden som anledning till popularitet." },
-          { "text": "De var enklare att installera", "incorrectReasoning": "Texten nämner inte installationsenkelt som anledning." },
-          { "text": "De kunde enkelt styra hydraulik", "incorrectReasoning": null },
-          { "text": "De var mer exakta än 0-10V", "incorrectReasoning": "Texten nämner inte precision som anledning." }
-        ],
-        "correctAnswer": 2,
-        "shortReasoning": "Texten nämner att 4-20 mA strömslingor enkelt kunde styra hydraulik.",
-        "longReasoning": "Enligt texten var 4-20 mA strömslingor populära inom processindustrin eftersom de 'enkelt kan styra hydraulik'.  Även om de nu används bredare, var deras initiala popularitet kopplad till hydraulstyrning."
       },
       {
         "question": "Vad är en audiofrekvens?",
@@ -7820,7 +7808,7 @@ const quizes = [
         "longReasoning": "Texten ger en punktlista över exempel 'Exempel på förstörande provning är: Dragprovning, Slagprovning, Hårdhetsprovning, Makro- & mikroprovning'."
       },
       {
-        "question": "Vilket pH-värde ska dricksvatten ha enligt texten?",
+        "question": "Vilket pH-värde ska dricksvatten ha?",
         "answers": [
           { "text": "Mellan 5 och 7", "incorrectReasoning": "Detta är för surt." },
           { "text": "Mellan 7 och 9", "incorrectReasoning": null },
@@ -7856,7 +7844,7 @@ const quizes = [
         "longReasoning": "Texten fortsätter '...och över 9 som hårt vatten'."
       },
       {
-        "question": "Vad kan orsaka surt vatten enligt texten?",
+        "question": "Vad kan orsaka surt vatten?",
         "answers": [
           { "text": "Kalcium", "incorrectReasoning": "Kalcium orsakar hårt vatten." },
           { "text": "Regn som tar sig ner i brunnen", "incorrectReasoning": null },
@@ -7868,7 +7856,7 @@ const quizes = [
         "longReasoning": "Texten anger 'Surt vatten kan orsakas av exempelvis regn som tar sig ner i brunnen...'"
       },
       {
-        "question": "Vad kommer hårt vatten ifrån enligt texten?",
+        "question": "Vad kommer hårt vatten ifrån?",
         "answers": [
           { "text": "Regnvatten", "incorrectReasoning": "Regnvatten kan orsaka surt vatten." },
           { "text": "Kalcium", "incorrectReasoning": null },
@@ -7968,8 +7956,8 @@ const quizes = [
         "answers": [
           { "text": "Över 7", "incorrectReasoning": "Hälsofarligt blir det vid högre pH, över 10.5." },
           { "text": "Över 10,5", "incorrectReasoning": null },
-          { "text": "Över 12", "incorrectReasoning": "Över 10.5 är hälsofarligt enligt texten." },
-          { "text": "Över 14", "incorrectReasoning": "Över 10.5 är hälsofarligt enligt texten." }
+          { "text": "Över 12", "incorrectReasoning": "Över 10.5 är hälsofarligt." },
+          { "text": "Över 14", "incorrectReasoning": "Över 10.5 är hälsofarligt." }
         ],
         "correctAnswer": 1,
         "shortReasoning": "Vatten blir hälsofarligt vid pH över 10,5.",
@@ -8028,8 +8016,8 @@ const quizes = [
         "answers": [
           { "text": "På kalla ytor", "incorrectReasoning": "De bildas framförallt där vatten värms." },
           { "text": "På platser där vatten värms", "incorrectReasoning": null },
-          { "text": "På platser med stillastående vatten", "incorrectReasoning": "Värme är den avgörande faktorn enligt texten." },
-          { "text": "På platser med rinnande vatten", "incorrectReasoning": "Värme är den avgörande faktorn enligt texten." }
+          { "text": "På platser med stillastående vatten", "incorrectReasoning": "Värme är den avgörande faktorn." },
+          { "text": "På platser med rinnande vatten", "incorrectReasoning": "Värme är den avgörande faktorn." }
         ],
         "correctAnswer": 1,
         "shortReasoning": "Kalkutfällningar bildas framförallt där vatten värms.",
@@ -8144,7 +8132,7 @@ const quizes = [
         "longReasoning": "Texten exemplifierar 'Luft erbjuder motstånd när vi går, springer eller åker i ett fordon...'"
       },
       {
-        "question": "Vilket medium är svårare att röra sig i, luft eller vatten, enligt texten?",
+        "question": "Vilket medium är svårare att röra sig i, luft eller vatten?",
         "answers": [
           { "text": "Luft", "incorrectReasoning": "Vatten är svårare att röra sig i." },
           { "text": "Vatten", "incorrectReasoning": null },
@@ -8192,7 +8180,7 @@ const quizes = [
         "longReasoning": "Texten exemplifierar 'Till exempel på ett berg är luftmängden i den högsta delen mindre än på en strand på grund av höjdskillnaden'."
       },
       {
-        "question": "Vad jämförs allt tryck med enligt texten?",
+        "question": "Vad jämförs allt tryck med?",
         "answers": [
           { "text": "Vattentrycket", "incorrectReasoning": "Atmosfärstrycket är referensen." },
           { "text": "Atmosfärstrycket", "incorrectReasoning": null },
@@ -8209,7 +8197,7 @@ const quizes = [
     "source": "",
     "questions": [
       {
-        "question": "Vad är mätteknik en nödvändighet för, enligt texten?",
+        "question": "Vad är mätteknik en nödvändighet för?",
         "answers": [
           { "text": "Endast för att göra ritningar", "incorrectReasoning": "Mätteknik handlar om kontroll och jämförelse, inte ritningar." },
           { "text": "För att kontrollera, jämföra och säkerställa detaljers överensstämmelse med krav", "incorrectReasoning": null },
@@ -10226,18 +10214,6 @@ const quizes = [
       "shortReasoning": "Mäta vinklar med hög noggrannhet.",
       "longReasoning": "Texten säger: 'Vinkelmätare med nonieskala är ett mätdon med större noggrannhet än gradskivan och som mäter vinklar med 5′ ≈ 0,1° noggrannhet.'"
     },
-  {
-    "question":"Vilken noggrannhet har en vinkelmätare med nonieskala, enligt texten?",
-    "answers":[
-      {"text":"1°", "incorrectReasoning": "Den har högre noggrannhet, 5'"},
-      {"text": "0.5°", "incorrectReasoning":"Den har högre noggrannhet, 5'"},
-      {"text": "5' (cirka 0,1°)", "incorrectReasoning": null},
-        {"text": "10'", "incorrectReasoning":"Noggrannheten är 5'"}
-    ],
-      "correctAnswer": 2,
-    "shortReasoning": "5' (cirka 0,1°).",
-    "longReasoning":"Texten anger: '...och som mäter vinklar med 5′ ≈ 0,1° noggrannhet.'"
-  },
   {
     "question": "Hur avläser man en vinkel med en gradskiva?",
     "answers": [
