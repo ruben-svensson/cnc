@@ -10466,5 +10466,646 @@ const quizes = [
         "longReasoning":"Att ange mätdon, temperatur, luftfuktighet, etc. ger en fullständig bild av mätförhållandena, vilket är viktigt för spårbarhet och om man behöver undersöka avvikelser."
   }
 ]
+  }, {
+    "name": "Matte A",
+    "source": "",
+    "questions": [
+      {
+          "question": "Lös ekvationen för x: 2x + 5 = 11",
+          "answers": [
+              { "text": "x = 2", "incorrectReasoning": "2*(2) + 5 = 9, inte 11" },
+              { "text": "x = 3", "incorrectReasoning": null },
+              { "text": "x = 4", "incorrectReasoning": "2*(4) + 5 = 13, inte 11" },
+              { "text": "x = 5", "incorrectReasoning": "2*(5) + 5 = 15, inte 11" }
+          ],
+          "correctAnswer": 1,
+          "shortReasoning": "Subtrahera 5 från båda sidor: 2x = 6. Dividera båda sidor med 2: x = 3.",
+          "longReasoning": "För att lösa ekvationen 2x + 5 = 11, isolera först termen med x genom att subtrahera 5 från båda sidor av ekvationen, vilket ger 2x = 11 - 5 = 6.  Därefter, dividera båda sidor med 2 för att lösa ut x: x = 6 / 2 = 3."
+      },
+      {
+          "question": "Beräkna skärhastigheten (Vc) i m/min om spindelvarvtalet (n) är 800 varv/min och diametern (D) på verktyget är 20 mm. Använd formeln: Vc = (π * D * n) / 1000",
+          "answers": [
+              { "text": "Vc = 25.13 m/min", "incorrectReasoning": null },
+              { "text": "Vc = 50.27 m/min", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "Vc = 12.57 m/min", "incorrectReasoning": "Detta är halva värdet, kontrollera beräkningen" },
+              { "text": "Vc = 75.40 m/min", "incorrectReasoning": "Detta är tre gånger värdet, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Vc = (3.14159 * 20 mm * 800 varv/min) / 1000 = 25.13 m/min.",
+          "longReasoning": "Formeln för skärhastighet är Vc = (π * D * n) / 1000.  Insättning av värden ger Vc = (3.14159 * 20 * 800) / 1000 = 50265.44 / 1000 = 25.13 m/min."
+      },
+      {
+          "question": "Om sin(30°) = 0.5, vad är längden på motstående sida i en rätvinklig triangel om hypotenusan är 10 mm och vinkeln är 30°?",
+          "answers": [
+              { "text": "5 mm", "incorrectReasoning": null },
+              { "text": "10 mm", "incorrectReasoning": "Detta skulle vara hypotenusan, inte motstående sida" },
+              { "text": "8.66 mm", "incorrectReasoning": "Detta är närliggande sida med cos(30)" },
+              { "text": "20 mm", "incorrectReasoning": "Detta är dubbla hypotenusan, inte motstående sida" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Motstående sida = hypotenusa * sin(vinkel) = 10 mm * 0.5 = 5 mm.",
+          "longReasoning": "I en rätvinklig triangel är sinus för en vinkel (sin(v)) definierad som förhållandet mellan längden på den motstående sidan och hypotenusan. Därför är längden på motstående sida = hypotenusa * sin(vinkel) = 10 mm * sin(30°) = 10 mm * 0.5 = 5 mm."
+      },
+      {
+          "question": "Lös för y: 3(y - 2) = 12",
+          "answers": [
+              { "text": "y = 2", "incorrectReasoning": "3*(2-2) = 0, inte 12" },
+              { "text": "y = 4", "incorrectReasoning": "3*(4-2) = 6, inte 12" },
+              { "text": "y = 6", "incorrectReasoning": null },
+              { "text": "y = 8", "incorrectReasoning": "3*(8-2) = 18, inte 12" }
+          ],
+          "correctAnswer": 2,
+          "shortReasoning": "Dividera båda sidor med 3: y - 2 = 4. Addera 2 till båda sidor: y = 6.",
+          "longReasoning": "För att lösa ekvationen 3(y - 2) = 12, dividera först båda sidor med 3, vilket ger y - 2 = 12 / 3 = 4. Addera sedan 2 till båda sidor för att lösa ut y: y = 4 + 2 = 6."
+      },
+      {
+          "question": "Beräkna matningshastigheten (Vf) i mm/min om matningen per tand (fz) är 0.15 mm/tand, antalet tänder (z) är 4 och spindelvarvtalet (n) är 1200 varv/min. Använd formeln: Vf = fz * z * n",
+          "answers": [
+              { "text": "Vf = 720 mm/min", "incorrectReasoning": null },
+              { "text": "Vf = 360 mm/min", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "Vf = 1440 mm/min", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "Vf = 480 mm/min", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Vf = 0.15 mm/tand * 4 tänder * 1200 varv/min = 720 mm/min.",
+          "longReasoning": "Formeln för matningshastighet är Vf = fz * z * n. Insättning av värden ger Vf = 0.15 * 4 * 1200 = 0.6 * 1200 = 720 mm/min."
+      },
+      {
+          "question": "Om cos(60°) = 0.5, vad är längden på närliggande sida i en rätvinklig triangel om hypotenusan är 20 mm och vinkeln är 60°?",
+          "answers": [
+              { "text": "10 mm", "incorrectReasoning": null },
+              { "text": "20 mm", "incorrectReasoning": "Detta är hypotenusan, inte närliggande sida" },
+              { "text": "17.32 mm", "incorrectReasoning": "Detta är motstående sida med sin(60)" },
+              { "text": "40 mm", "incorrectReasoning": "Detta är dubbla hypotenusan, inte närliggande sida" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Närliggande sida = hypotenusa * cos(vinkel) = 20 mm * 0.5 = 10 mm.",
+          "longReasoning": "I en rätvinklig triangel är cosinus för en vinkel (cos(v)) definierad som förhållandet mellan längden på den närliggande sidan och hypotenusan. Därför är längden på närliggande sida = hypotenusa * cos(vinkel) = 20 mm * cos(60°) = 20 mm * 0.5 = 10 mm."
+      },
+      {
+          "question": "Lös för z: (z + 4) / 2 = 7",
+          "answers": [
+              { "text": "z = 5", "incorrectReasoning": " (5+4)/2 = 4.5, inte 7" },
+              { "text": "z = 8", "incorrectReasoning": " (8+4)/2 = 6, inte 7" },
+              { "text": "z = 10", "incorrectReasoning": null },
+              { "text": "z = 12", "incorrectReasoning": " (12+4)/2 = 8, inte 7" }
+          ],
+          "correctAnswer": 2,
+          "shortReasoning": "Multiplicera båda sidor med 2: z + 4 = 14. Subtrahera 4 från båda sidor: z = 10.",
+          "longReasoning": "För att lösa ekvationen (z + 4) / 2 = 7, multiplicera först båda sidor med 2, vilket ger z + 4 = 7 * 2 = 14. Subtrahera sedan 4 från båda sidor för att lösa ut z: z = 14 - 4 = 10."
+      },
+      {
+          "question": "Beräkna materialavverkningshastigheten (Q) i cm³/min om skärdjupet (ap) är 2 mm, skärbredden (ae) är 15 mm och matningshastigheten (Vf) är 500 mm/min. Använd formeln: Q = ap * ae * Vf / 1000",
+          "answers": [
+              { "text": "Q = 15 cm³/min", "incorrectReasoning": null },
+              { "text": "Q = 30 cm³/min", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "Q = 7.5 cm³/min", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "Q = 22.5 cm³/min", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Q = (2 mm * 15 mm * 500 mm/min) / 1000 = 15 cm³/min.",
+          "longReasoning": "Formeln för materialavverkningshastighet är Q = ap * ae * Vf / 1000. Insättning av värden ger Q = (2 * 15 * 500) / 1000 = 15000 / 1000 = 15 cm³/min."
+      },
+      {
+          "question": "Om tan(45°) = 1, vad är längden på motstående sida i en rätvinklig triangel om närliggande sida är 7 mm och vinkeln är 45°?",
+          "answers": [
+              { "text": "7 mm", "incorrectReasoning": null },
+              { "text": "14 mm", "incorrectReasoning": "Detta är dubbla närliggande sida, inte motstående sida" },
+              { "text": "4.95 mm", "incorrectReasoning": "Detta är närliggande sida delat med sqrt(2)" },
+              { "text": "1 mm", "incorrectReasoning": "Detta är inte rätt värde" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Motstående sida = närliggande sida * tan(vinkel) = 7 mm * 1 = 7 mm.",
+          "longReasoning": "I en rätvinklig triangel är tangens för en vinkel (tan(v)) definierad som förhållandet mellan längden på den motstående sidan och den närliggande sidan. Därför är längden på motstående sida = närliggande sida * tan(vinkel) = 7 mm * tan(45°) = 7 mm * 1 = 7 mm."
+      },
+      {
+          "question": "Lös för a: 5a - 8 = 2a + 4",
+          "answers": [
+              { "text": "a = 2", "incorrectReasoning": "5*(2) - 8 = 2,  2*(2) + 4 = 8, ej lika" },
+              { "text": "a = 3", "incorrectReasoning": "5*(3) - 8 = 7,  2*(3) + 4 = 10, ej lika" },
+              { "text": "a = 4", "incorrectReasoning": null },
+              { "text": "a = 6", "incorrectReasoning": "5*(6) - 8 = 22,  2*(6) + 4 = 16, ej lika" }
+          ],
+          "correctAnswer": 2,
+          "shortReasoning": "Subtrahera 2a från båda sidor: 3a - 8 = 4. Addera 8 till båda sidor: 3a = 12. Dividera båda sidor med 3: a = 4.",
+          "longReasoning": "För att lösa ekvationen 5a - 8 = 2a + 4, samla först a-termerna på ena sidan och konstanta termer på andra sidan. Subtrahera 2a från båda sidor: 5a - 2a - 8 = 4, vilket ger 3a - 8 = 4. Addera sedan 8 till båda sidor: 3a = 4 + 8 = 12. Slutligen, dividera båda sidor med 3: a = 12 / 3 = 4."
+      },
+      {
+          "question": "Beräkna spindelvarvtalet (n) i varv/min om skärhastigheten (Vc) är 100 m/min och diametern (D) på verktyget är 10 mm. Använd formeln: n = (Vc * 1000) / (π * D)",
+          "answers": [
+              { "text": "n = 3183 varv/min", "incorrectReasoning": null },
+              { "text": "n = 1592 varv/min", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "n = 6366 varv/min", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "n = 1000 varv/min", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "n = (100 m/min * 1000) / (3.14159 * 10 mm) = 3183 varv/min.",
+          "longReasoning": "Formeln för spindelvarvtal är n = (Vc * 1000) / (π * D). Insättning av värden ger n = (100 * 1000) / (3.14159 * 10) = 100000 / 31.4159 = 3183 varv/min."
+      },
+      {
+          "question": "Om sin(45°) = 0.707, vad är längden på hypotenusan i en rätvinklig triangel om motstående sida är 7.07 mm och vinkeln är 45°?",
+          "answers": [
+              { "text": "10 mm", "incorrectReasoning": null },
+              { "text": "5 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "7.07 mm", "incorrectReasoning": "Detta är motstående sida, inte hypotenusan" },
+              { "text": "14.14 mm", "incorrectReasoning": "Detta är dubbla hypotenusan, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Hypotenusa = Motstående sida / sin(vinkel) = 7.07 mm / 0.707 = 10 mm.",
+          "longReasoning": "Från definitionen av sinus (sin(v) = motstående sida / hypotenusa), kan vi lösa ut hypotenusan som: Hypotenusa = Motstående sida / sin(vinkel) = 7.07 mm / sin(45°) = 7.07 mm / 0.707 = 10 mm."
+      },
+      {
+          "question": "Lös för b: 4b + 2 - b = 11",
+          "answers": [
+              { "text": "b = 2", "incorrectReasoning": "4*(2) + 2 - 2 = 8, inte 11" },
+              { "text": "b = 3", "incorrectReasoning": null },
+              { "text": "b = 4", "incorrectReasoning": "4*(4) + 2 - 4 = 14, inte 11" },
+              { "text": "b = 5", "incorrectReasoning": "4*(5) + 2 - 5 = 17, inte 11" }
+          ],
+          "correctAnswer": 1,
+          "shortReasoning": "Kombinera b-termer: 3b + 2 = 11. Subtrahera 2 från båda sidor: 3b = 9. Dividera båda sidor med 3: b = 3.",
+          "longReasoning": "För att lösa ekvationen 4b + 2 - b = 11, kombinera först termerna med b: (4b - b) + 2 = 11, vilket ger 3b + 2 = 11. Subtrahera sedan 2 från båda sidor: 3b = 11 - 2 = 9. Slutligen, dividera båda sidor med 3: b = 9 / 3 = 3."
+      },
+      {
+          "question": "Beräkna matningen per varv (f) i mm/varv om matningshastigheten (Vf) är 600 mm/min och spindelvarvtalet (n) är 1500 varv/min. Använd formeln: f = Vf / n",
+          "answers": [
+              { "text": "f = 0.4 mm/varv", "incorrectReasoning": null },
+              { "text": "f = 0.2 mm/varv", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "f = 0.8 mm/varv", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "f = 1.0 mm/varv", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "f = 600 mm/min / 1500 varv/min = 0.4 mm/varv.",
+          "longReasoning": "Formeln för matning per varv är f = Vf / n. Insättning av värden ger f = 600 / 1500 = 0.4 mm/varv."
+      },
+      {
+          "question": "Om cos(30°) = 0.866, vad är längden på hypotenusan i en rätvinklig triangel om närliggande sida är 8.66 mm och vinkeln är 30°?",
+          "answers": [
+              { "text": "10 mm", "incorrectReasoning": null },
+              { "text": "5 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "8.66 mm", "incorrectReasoning": "Detta är närliggande sida, inte hypotenusan" },
+              { "text": "17.32 mm", "incorrectReasoning": "Detta är dubbla hypotenusan, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Hypotenusa = Närliggande sida / cos(vinkel) = 8.66 mm / 0.866 = 10 mm.",
+          "longReasoning": "Från definitionen av cosinus (cos(v) = närliggande sida / hypotenusa), kan vi lösa ut hypotenusan som: Hypotenusa = Närliggande sida / cos(vinkel) = 8.66 mm / cos(30°) = 8.66 mm / 0.866 = 10 mm."
+      },
+      {
+          "question": "Lös för c: 7 + c / 3 = 9",
+          "answers": [
+              { "text": "c = 2", "incorrectReasoning": "7 + 2/3 = 7.66, inte 9" },
+              { "text": "c = 4", "incorrectReasoning": "7 + 4/3 = 8.33, inte 9" },
+              { "text": "c = 6", "incorrectReasoning": null },
+              { "text": "c = 8", "incorrectReasoning": "7 + 8/3 = 9.66, inte 9" }
+          ],
+          "correctAnswer": 2,
+          "shortReasoning": "Subtrahera 7 från båda sidor: c / 3 = 2. Multiplicera båda sidor med 3: c = 6.",
+          "longReasoning": "För att lösa ekvationen 7 + c / 3 = 9, subtrahera först 7 från båda sidor, vilket ger c / 3 = 9 - 7 = 2. Multiplicera sedan båda sidor med 3 för att lösa ut c: c = 2 * 3 = 6."
+      },
+      {
+          "question": "Beräkna skärdjupet (ap) i mm om materialavverkningshastigheten (Q) är 20 cm³/min, skärbredden (ae) är 10 mm och matningshastigheten (Vf) är 400 mm/min. Använd formeln: ap = (Q * 1000) / (ae * Vf)",
+          "answers": [
+              { "text": "ap = 5 mm", "incorrectReasoning": null },
+              { "text": "ap = 10 mm", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "ap = 2.5 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "ap = 7.5 mm", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "ap = (20 cm³/min * 1000) / (10 mm * 400 mm/min) = 5 mm.",
+          "longReasoning": "Formeln för skärdjup är ap = (Q * 1000) / (ae * Vf). Insättning av värden ger ap = (20 * 1000) / (10 * 400) = 20000 / 4000 = 5 mm."
+      },
+      {
+          "question": "Om tan(30°) = 0.577, vad är längden på närliggande sida i en rätvinklig triangel om motstående sida är 5.77 mm och vinkeln är 30°?",
+          "answers": [
+              { "text": "10 mm", "incorrectReasoning": null },
+              { "text": "5 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "5.77 mm", "incorrectReasoning": "Detta är motstående sida, inte närliggande sida" },
+              { "text": "11.54 mm", "incorrectReasoning": "Detta är dubbla närliggande sida, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Närliggande sida = Motstående sida / tan(vinkel) = 5.77 mm / 0.577 = 10 mm.",
+          "longReasoning": "Från definitionen av tangens (tan(v) = motstående sida / närliggande sida), kan vi lösa ut närliggande sida som: Närliggande sida = Motstående sida / tan(vinkel) = 5.77 mm / tan(30°) = 5.77 mm / 0.577 = 10 mm."
+      },
+      {
+          "question": "Lös för d: 6d - 3 = 4d + 7",
+          "answers": [
+              { "text": "d = 2", "incorrectReasoning": "6*(2) - 3 = 9,  4*(2) + 7 = 15, ej lika" },
+              { "text": "d = 3", "incorrectReasoning": "6*(3) - 3 = 15,  4*(3) + 7 = 19, ej lika" },
+              { "text": "d = 5", "incorrectReasoning": null },
+              { "text": "d = 7", "incorrectReasoning": "6*(7) - 3 = 39,  4*(7) + 7 = 35, ej lika" }
+          ],
+          "correctAnswer": 2,
+          "shortReasoning": "Subtrahera 4d från båda sidor: 2d - 3 = 7. Addera 3 till båda sidor: 2d = 10. Dividera båda sidor med 2: d = 5.",
+          "longReasoning": "För att lösa ekvationen 6d - 3 = 4d + 7, samla först d-termerna på ena sidan och konstanta termer på andra sidan. Subtrahera 4d från båda sidor: 6d - 4d - 3 = 7, vilket ger 2d - 3 = 7. Addera sedan 3 till båda sidor: 2d = 7 + 3 = 10. Slutligen, dividera båda sidor med 2: d = 10 / 2 = 5."
+      },
+      {
+          "question": "Beräkna skärbredden (ae) i mm om materialavverkningshastigheten (Q) är 25 cm³/min, skärdjupet (ap) är 2.5 mm och matningshastigheten (Vf) är 500 mm/min. Använd formeln: ae = (Q * 1000) / (ap * Vf)",
+          "answers": [
+              { "text": "ae = 20 mm", "incorrectReasoning": null },
+              { "text": "ae = 10 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "ae = 40 mm", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "ae = 15 mm", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "ae = (25 cm³/min * 1000) / (2.5 mm * 500 mm/min) = 20 mm.",
+          "longReasoning": "Formeln för skärbredd är ae = (Q * 1000) / (ap * Vf). Insättning av värden ger ae = (25 * 1000) / (2.5 * 500) = 25000 / 1250 = 20 mm."
+      },
+      {
+          "question": "Om sin(60°) = 0.866, vad är längden på motstående sida i en rätvinklig triangel om hypotenusan är 15 mm och vinkeln är 60°?",
+          "answers": [
+              { "text": "12.99 mm", "incorrectReasoning": null },
+              { "text": "7.5 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "15 mm", "incorrectReasoning": "Detta är hypotenusan, inte motstående sida" },
+              { "text": "30 mm", "incorrectReasoning": "Detta är dubbla hypotenusan, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Motstående sida = hypotenusa * sin(vinkel) = 15 mm * 0.866 = 12.99 mm.",
+          "longReasoning": "I en rätvinklig triangel är sinus för en vinkel (sin(v)) definierad som förhållandet mellan längden på den motstående sidan och hypotenusan. Därför är längden på motstående sida = hypotenusa * sin(vinkel) = 15 mm * sin(60°) = 15 mm * 0.866 = 12.99 mm."
+      },
+      {
+          "question": "Lös för e: 9 - 2e = 15 - 4e",
+          "answers": [
+              { "text": "e = 2", "incorrectReasoning": "9 - 2*(2) = 5,  15 - 4*(2) = 7, ej lika" },
+              { "text": "e = 3", "incorrectReasoning": null },
+              { "text": "e = -3", "incorrectReasoning": "9 - 2*(-3) = 15,  15 - 4*(-3) = 27, ej lika" },
+              { "text": "e = -2", "incorrectReasoning": "9 - 2*(-2) = 13,  15 - 4*(-2) = 23, ej lika" }
+          ],
+          "correctAnswer": 1,
+          "shortReasoning": "Addera 4e till båda sidor: 9 + 2e = 15. Subtrahera 9 från båda sidor: 2e = 6. Dividera båda sidor med 2: e = 3.",
+          "longReasoning": "För att lösa ekvationen 9 - 2e = 15 - 4e, samla först e-termerna på ena sidan och konstanta termer på andra sidan. Addera 4e till båda sidor: 9 - 2e + 4e = 15, vilket ger 9 + 2e = 15. Subtrahera sedan 9 från båda sidor: 2e = 15 - 9 = 6. Slutligen, dividera båda sidor med 2: e = 6 / 2 = 3."
+      },
+      {
+          "question": "Beräkna matningen per tand (fz) i mm/tand om matningshastigheten (Vf) är 900 mm/min, antalet tänder (z) är 6 och spindelvarvtalet (n) är 1000 varv/min. Använd formeln: fz = Vf / (z * n)",
+          "answers": [
+              { "text": "fz = 0.15 mm/tand", "incorrectReasoning": null },
+              { "text": "fz = 0.075 mm/tand", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "fz = 0.3 mm/tand", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "fz = 0.2 mm/tand", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "fz = 900 mm/min / (6 tänder * 1000 varv/min) = 0.15 mm/tand.",
+          "longReasoning": "Formeln för matning per tand är fz = Vf / (z * n). Insättning av värden ger fz = 900 / (6 * 1000) = 900 / 6000 = 0.15 mm/tand."
+      },
+      {
+          "question": "Om cos(45°) = 0.707, vad är längden på närliggande sida i en rätvinklig triangel om hypotenusan är 14.14 mm och vinkeln är 45°?",
+          "answers": [
+              { "text": "10 mm", "incorrectReasoning": null },
+              { "text": "7.07 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "14.14 mm", "incorrectReasoning": "Detta är hypotenusan, inte närliggande sida" },
+              { "text": "28.28 mm", "incorrectReasoning": "Detta är dubbla hypotenusan, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Närliggande sida = hypotenusa * cos(vinkel) = 14.14 mm * 0.707 = 10 mm.",
+          "longReasoning": "I en rätvinklig triangel är cosinus för en vinkel (cos(v)) definierad som förhållandet mellan längden på den närliggande sidan och hypotenusan. Därför är längden på närliggande sida = hypotenusa * cos(vinkel) = 14.14 mm * cos(45°) = 14.14 mm * 0.707 = 10 mm."
+      },
+      {
+          "question": "Lös för f: 10 - f / 2 = 6",
+          "answers": [
+              { "text": "f = 4", "incorrectReasoning": "10 - 4/2 = 8, inte 6" },
+              { "text": "f = 6", "incorrectReasoning": "10 - 6/2 = 7, inte 6" },
+              { "text": "f = 8", "incorrectReasoning": null },
+              { "text": "f = 10", "incorrectReasoning": "10 - 10/2 = 5, inte 6" }
+          ],
+          "correctAnswer": 2,
+          "shortReasoning": "Subtrahera 10 från båda sidor: -f / 2 = -4. Multiplicera båda sidor med -2: f = 8.",
+          "longReasoning": "För att lösa ekvationen 10 - f / 2 = 6, subtrahera först 10 från båda sidor, vilket ger -f / 2 = 6 - 10 = -4. Multiplicera sedan båda sidor med -2 för att lösa ut f: f = -4 * -2 = 8."
+      },
+      {
+          "question": "Beräkna skärhastigheten (Vc) i m/min om spindelvarvtalet (n) är 1500 varv/min och diametern (D) på verktyget är 15 mm. Använd formeln: Vc = (π * D * n) / 1000",
+          "answers": [
+              { "text": "Vc = 70.69 m/min", "incorrectReasoning": null },
+              { "text": "Vc = 35.34 m/min", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "Vc = 141.37 m/min", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "Vc = 100 m/min", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Vc = (3.14159 * 15 mm * 1500 varv/min) / 1000 = 70.69 m/min.",
+          "longReasoning": "Formeln för skärhastighet är Vc = (π * D * n) / 1000. Insättning av värden ger Vc = (3.14159 * 15 * 1500) / 1000 = 70685.775 / 1000 = 70.69 m/min."
+      },
+      {
+          "question": "Om tan(60°) = 1.732, vad är längden på motstående sida i en rätvinklig triangel om närliggande sida är 5 mm och vinkeln är 60°?",
+          "answers": [
+              { "text": "8.66 mm", "incorrectReasoning": null },
+              { "text": "2.89 mm", "incorrectReasoning": "Detta är närliggande sida / tan(60)" },
+              { "text": "5 mm", "incorrectReasoning": "Detta är närliggande sida, inte motstående sida" },
+              { "text": "10 mm", "incorrectReasoning": "Detta är dubbla närliggande sida, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Motstående sida = Närliggande sida * tan(vinkel) = 5 mm * 1.732 = 8.66 mm.",
+          "longReasoning": "I en rätvinklig triangel är tangens för en vinkel (tan(v)) definierad som förhållandet mellan längden på den motstående sidan och den närliggande sidan. Därför är längden på motstående sida = Närliggande sida * tan(vinkel) = 5 mm * tan(60°) = 5 mm * 1.732 = 8.66 mm."
+      },
+      {
+          "question": "Lös för g: 2(g + 1) - g = 5",
+          "answers": [
+              { "text": "g = 2", "incorrectReasoning": "2*(2+1) - 2 = 4, inte 5" },
+              { "text": "g = 3", "incorrectReasoning": null },
+              { "text": "g = 4", "incorrectReasoning": "2*(4+1) - 4 = 6, inte 5" },
+              { "text": "g = 5", "incorrectReasoning": "2*(5+1) - 5 = 7, inte 5" }
+          ],
+          "correctAnswer": 1,
+          "shortReasoning": "Expandera parentesen: 2g + 2 - g = 5. Kombinera g-termer: g + 2 = 5. Subtrahera 2 från båda sidor: g = 3.",
+          "longReasoning": "För att lösa ekvationen 2(g + 1) - g = 5, expandera först parentesen: 2g + 2 - g = 5. Kombinera sedan termerna med g: (2g - g) + 2 = 5, vilket ger g + 2 = 5. Slutligen, subtrahera 2 från båda sidor: g = 5 - 2 = 3."
+      },
+      {
+          "question": "Beräkna matningshastigheten (Vf) i mm/min om matningen per varv (f) är 0.2 mm/varv och spindelvarvtalet (n) är 2000 varv/min. Använd formeln: Vf = f * n",
+          "answers": [
+              { "text": "Vf = 400 mm/min", "incorrectReasoning": null },
+              { "text": "Vf = 200 mm/min", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "Vf = 800 mm/min", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "Vf = 600 mm/min", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Vf = 0.2 mm/varv * 2000 varv/min = 400 mm/min.",
+          "longReasoning": "Formeln för matningshastighet är Vf = f * n. Insättning av värden ger Vf = 0.2 * 2000 = 400 mm/min."
+      },
+      {
+          "question": "Om cos(45°) = 0.707, vad är längden på motstående sida i en rätvinklig triangel om närliggande sida är 10 mm och vinkeln är 45°?",
+          "answers": [
+              { "text": "10 mm", "incorrectReasoning": null },
+              { "text": "5 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "7.07 mm", "incorrectReasoning": "Detta är närliggande sida * cos(45), inte motstående sida" },
+              { "text": "14.14 mm", "incorrectReasoning": "Detta är dubbla närliggande sida, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Motstående sida = Närliggande sida * tan(45°) = Närliggande sida * 1 = 10 mm.",
+          "longReasoning": "I en rätvinklig triangel, om vinkeln är 45°, är triangeln en likbent rätvinklig triangel, vilket innebär att den motstående sidan och den närliggande sidan är lika långa. Alternativt, tangens för 45° är 1 (tan(45°) = 1), och tan(v) = motstående sida / närliggande sida.  Därför är motstående sida = Närliggande sida * tan(45°) = 10 mm * 1 = 10 mm."
+      },
+      {
+          "question": "Lös för h: (2h - 1) / 3 = 3",
+          "answers": [
+              { "text": "h = 2", "incorrectReasoning": "(2*(2)-1)/3 = 1, inte 3" },
+              { "text": "h = 3", "incorrectReasoning": "(2*(3)-1)/3 = 1.66, inte 3" },
+              { "text": "h = 5", "incorrectReasoning": null },
+              { "text": "h = 7", "incorrectReasoning": "(2*(7)-1)/3 = 4.33, inte 3" }
+          ],
+          "correctAnswer": 2,
+          "shortReasoning": "Multiplicera båda sidor med 3: 2h - 1 = 9. Addera 1 till båda sidor: 2h = 10. Dividera båda sidor med 2: h = 5.",
+          "longReasoning": "För att lösa ekvationen (2h - 1) / 3 = 3, multiplicera först båda sidor med 3, vilket ger 2h - 1 = 3 * 3 = 9. Addera sedan 1 till båda sidor: 2h = 9 + 1 = 10. Slutligen, dividera båda sidor med 2: h = 10 / 2 = 5."
+      },
+      {
+          "question": "Beräkna materialavverkningshastigheten (Q) i cm³/min om skärdjupet (ap) är 3 mm, skärbredden (ae) är 8 mm och matningshastigheten (Vf) är 750 mm/min. Använd formeln: Q = ap * ae * Vf / 1000",
+          "answers": [
+              { "text": "Q = 18 cm³/min", "incorrectReasoning": null },
+              { "text": "Q = 9 cm³/min", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "Q = 36 cm³/min", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "Q = 24 cm³/min", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Q = (3 mm * 8 mm * 750 mm/min) / 1000 = 18 cm³/min.",
+          "longReasoning": "Formeln för materialavverkningshastighet är Q = ap * ae * Vf / 1000. Insättning av värden ger Q = (3 * 8 * 750) / 1000 = 18000 / 1000 = 18 cm³/min."
+      },
+      {
+          "question": "Om sin(30°) = 0.5, vad är längden på närliggande sida i en rätvinklig triangel om motstående sida är 6 mm och vinkeln är 30°?",
+          "answers": [
+              { "text": "10.39 mm", "incorrectReasoning": null },
+              { "text": "3 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "6 mm", "incorrectReasoning": "Detta är motstående sida, inte närliggande sida" },
+              { "text": "12 mm", "incorrectReasoning": "Detta är dubbla motstående sida, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Närliggande sida = Motstående sida / tan(30°) = 6 mm / 0.577 = 10.39 mm.",
+          "longReasoning": "Från definitionen av tangens (tan(v) = motstående sida / närliggande sida), kan vi lösa ut närliggande sida som: Närliggande sida = Motstående sida / tan(30°) = 6 mm / tan(30°) = 6 mm / 0.577 = 10.39 mm."
+      },
+      {
+          "question": "Lös för i: 4(i - 3) + 2i = 18",
+          "answers": [
+              { "text": "i = 2", "incorrectReasoning": "4*(2-3) + 2*(2) = 0, inte 18" },
+              { "text": "i = 3", "incorrectReasoning": "4*(3-3) + 2*(3) = 6, inte 18" },
+              { "text": "i = 5", "incorrectReasoning": null },
+              { "text": "i = 6", "incorrectReasoning": "4*(6-3) + 2*(6) = 24, inte 18" }
+          ],
+          "correctAnswer": 2,
+          "shortReasoning": "Expandera parentesen: 4i - 12 + 2i = 18. Kombinera i-termer: 6i - 12 = 18. Addera 12 till båda sidor: 6i = 30. Dividera båda sidor med 6: i = 5.",
+          "longReasoning": "För att lösa ekvationen 4(i - 3) + 2i = 18, expandera först parentesen: 4i - 12 + 2i = 18. Kombinera sedan termerna med i: (4i + 2i) - 12 = 18, vilket ger 6i - 12 = 18. Addera sedan 12 till båda sidor: 6i = 18 + 12 = 30. Slutligen, dividera båda sidor med 6: i = 30 / 6 = 5."
+      },
+      {
+          "question": "Beräkna spindelvarvtalet (n) i varv/min om skärhastigheten (Vc) är 120 m/min och diametern (D) på verktyget är 8 mm. Använd formeln: n = (Vc * 1000) / (π * D)",
+          "answers": [
+              { "text": "n = 4777 varv/min", "incorrectReasoning": null },
+              { "text": "n = 2388 varv/min", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "n = 9554 varv/min", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "n = 1200 varv/min", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "n = (120 m/min * 1000) / (3.14159 * 8 mm) = 4777 varv/min.",
+          "longReasoning": "Formeln för spindelvarvtal är n = (Vc * 1000) / (π * D). Insättning av värden ger n = (120 * 1000) / (3.14159 * 8) = 120000 / 25.1327 = 4777 varv/min."
+      },
+      {
+          "question": "Om tan(45°) = 1, vad är längden på hypotenusan i en rätvinklig triangel om motstående sida är 5 mm och vinkeln är 45°? (Använd Pythagoras sats)",
+          "answers": [
+              { "text": "7.07 mm", "incorrectReasoning": null },
+              { "text": "5 mm", "incorrectReasoning": "Detta är motstående sida, inte hypotenusan" },
+              { "text": "10 mm", "incorrectReasoning": "Detta är dubbla hypotenusan, kontrollera beräkningen" },
+              { "text": "2.5 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Närliggande sida = motstående sida = 5mm (45° vinkel). Hypotenusa = √(5² + 5²) = 7.07 mm.",
+          "longReasoning": "I en 45-45-90 graders triangel är de två kateterna (motstående och närliggande sidor) lika långa. Eftersom vinkeln är 45° och motstående sida är 5 mm, är närliggande sida också 5 mm. Enligt Pythagoras sats (a² + b² = c²), där a och b är kateterna och c är hypotenusan, hypotenusan = √(5² + 5²) = √(25 + 25) = √50 ≈ 7.07 mm."
+      },
+      {
+          "question": "Lös för j: 8 + 3j - 2 = 12",
+          "answers": [
+              { "text": "j = 1", "incorrectReasoning": "8 + 3*(1) - 2 = 9, inte 12" },
+              { "text": "j = 2", "incorrectReasoning": null },
+              { "text": "j = 3", "incorrectReasoning": "8 + 3*(3) - 2 = 15, inte 12" },
+              { "text": "j = 4", "incorrectReasoning": "8 + 3*(4) - 2 = 18, inte 12" }
+          ],
+          "correctAnswer": 1,
+          "shortReasoning": "Kombinera konstanter: 6 + 3j = 12. Subtrahera 6 från båda sidor: 3j = 6. Dividera båda sidor med 3: j = 2.",
+          "longReasoning": "För att lösa ekvationen 8 + 3j - 2 = 12, kombinera först de konstanta termerna: (8 - 2) + 3j = 12, vilket ger 6 + 3j = 12. Subtrahera sedan 6 från båda sidor: 3j = 12 - 6 = 6. Slutligen, dividera båda sidor med 3: j = 6 / 3 = 2."
+      },
+      {
+          "question": "Beräkna matningen per varv (f) i mm/varv om matningshastigheten (Vf) är 1200 mm/min och spindelvarvtalet (n) är 3000 varv/min. Använd formeln: f = Vf / n",
+          "answers": [
+              { "text": "f = 0.4 mm/varv", "incorrectReasoning": null },
+              { "text": "f = 0.2 mm/varv", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "f = 0.6 mm/varv", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" },
+              { "text": "f = 0.8 mm/varv", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "f = 1200 mm/min / 3000 varv/min = 0.4 mm/varv.",
+          "longReasoning": "Formeln för matning per varv är f = Vf / n. Insättning av värden ger f = 1200 / 3000 = 0.4 mm/varv."
+      },
+      {
+          "question": "Om cos(60°) = 0.5, vad är längden på motstående sida i en rätvinklig triangel om närliggande sida är 10 mm och vinkeln är 60°?",
+          "answers": [
+              { "text": "17.32 mm", "incorrectReasoning": null },
+              { "text": "5 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "10 mm", "incorrectReasoning": "Detta är närliggande sida, inte motstående sida" },
+              { "text": "20 mm", "incorrectReasoning": "Detta är dubbla närliggande sida, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Motstående sida = Närliggande sida * tan(60°) = 10 mm * 1.732 = 17.32 mm.",
+          "longReasoning": "Från definitionen av tangens (tan(v) = motstående sida / närliggande sida), kan vi lösa ut motstående sida som: Motstående sida = Närliggande sida * tan(60°) = 10 mm * tan(60°) = 10 mm * 1.732 = 17.32 mm."
+      },
+      {
+          "question": "Lös för k: 15 - 3k + 5 = 8",
+          "answers": [
+              { "text": "k = 2", "incorrectReasoning": "15 - 3*(2) + 5 = 14, inte 8" },
+              { "text": "k = 3", "incorrectReasoning": "15 - 3*(3) + 5 = 11, inte 8" },
+              { "text": "k = 4", "incorrectReasoning": null },
+              { "text": "k = 6", "incorrectReasoning": "15 - 3*(6) + 5 = 2, inte 8" }
+          ],
+          "correctAnswer": 2,
+          "shortReasoning": "Kombinera konstanter: 20 - 3k = 8. Subtrahera 20 från båda sidor: -3k = -12. Dividera båda sidor med -3: k = 4.",
+          "longReasoning": "För att lösa ekvationen 15 - 3k + 5 = 8, kombinera först de konstanta termerna: (15 + 5) - 3k = 8, vilket ger 20 - 3k = 8. Subtrahera sedan 20 från båda sidor: -3k = 8 - 20 = -12. Slutligen, dividera båda sidor med -3: k = -12 / -3 = 4."
+      },
+      {
+          "question": "Beräkna skärdjupet (ap) i mm om materialavverkningshastigheten (Q) är 30 cm³/min, skärbredden (ae) är 12 mm och matningshastigheten (Vf) är 600 mm/min. Använd formeln: ap = (Q * 1000) / (ae * Vf)",
+          "answers": [
+              { "text": "ap = 4.17 mm", "incorrectReasoning": null },
+              { "text": "ap = 2.08 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "ap = 8.33 mm", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "ap = 6.25 mm", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "ap = (30 cm³/min * 1000) / (12 mm * 600 mm/min) = 4.17 mm.",
+          "longReasoning": "Formeln för skärdjup är ap = (Q * 1000) / (ae * Vf). Insättning av värden ger ap = (30 * 1000) / (12 * 600) = 30000 / 7200 = 4.17 mm."
+      },
+      {
+          "question": "Om sin(45°) = 0.707, vad är längden på närliggande sida i en rätvinklig triangel om hypotenusan är 7.07 mm och vinkeln är 45°?",
+          "answers": [
+              { "text": "5 mm", "incorrectReasoning": null },
+              { "text": "3.53 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "7.07 mm", "incorrectReasoning": "Detta är hypotenusan, inte närliggande sida" },
+              { "text": "14.14 mm", "incorrectReasoning": "Detta är dubbla hypotenusan, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Närliggande sida = hypotenusa * cos(vinkel) = 7.07 mm * 0.707 = 5 mm.",
+          "longReasoning": "I en rätvinklig triangel är cosinus för en vinkel (cos(v)) definierad som förhållandet mellan längden på den närliggande sidan och hypotenusan. Därför är längden på närliggande sida = hypotenusa * cos(vinkel) = 7.07 mm * cos(45°) = 7.07 mm * 0.707 = 5 mm."
+      },
+      {
+          "question": "Lös för m: (3m + 2) / 4 = 5",
+          "answers": [
+              { "text": "m = 2", "incorrectReasoning": "(3*(2)+2)/4 = 2, inte 5" },
+              { "text": "m = 4", "incorrectReasoning": " (3*(4)+2)/4 = 3.5, inte 5" },
+              { "text": "m = 6", "incorrectReasoning": null },
+              { "text": "m = 8", "incorrectReasoning": "(3*(8)+2)/4 = 6.5, inte 5" }
+          ],
+          "correctAnswer": 2,
+          "shortReasoning": "Multiplicera båda sidor med 4: 3m + 2 = 20. Subtrahera 2 från båda sidor: 3m = 18. Dividera båda sidor med 3: m = 6.",
+          "longReasoning": "För att lösa ekvationen (3m + 2) / 4 = 5, multiplicera först båda sidor med 4, vilket ger 3m + 2 = 5 * 4 = 20. Subtrahera sedan 2 från båda sidor: 3m = 20 - 2 = 18. Slutligen, dividera båda sidor med 3: m = 18 / 3 = 6."
+      },
+      {
+          "question": "Beräkna matningen per varv (f) i mm/varv om matningshastigheten (Vf) är 250 mm/min och spindelvarvtalet (n) är 500 varv/min. Använd formeln: f = Vf / n",
+          "answers": [
+              { "text": "f = 0.5 mm/varv", "incorrectReasoning": null },
+              { "text": "f = 0.25 mm/varv", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "f = 1.0 mm/varv", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "f = 0.75 mm/varv", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "f = 250 mm/min / 500 varv/min = 0.5 mm/varv.",
+          "longReasoning": "Formeln för matning per varv är f = Vf / n. Insättning av värden ger f = 250 / 500 = 0.5 mm/varv."
+      },
+      {
+          "question": "Om cos(30°) = 0.866, vad är längden på motstående sida i en rätvinklig triangel om närliggande sida är 5 mm och vinkeln är 30°?",
+          "answers": [
+              { "text": "2.89 mm", "incorrectReasoning": null },
+              { "text": "10 mm", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "5 mm", "incorrectReasoning": "Detta är närliggande sida, inte motstående sida" },
+              { "text": "8.66 mm", "incorrectReasoning": "Detta är närliggande sida * cos(30), inte motstående sida" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Motstående sida = Närliggande sida * tan(30°) = 5 mm * 0.577 = 2.89 mm.",
+          "longReasoning": "Från definitionen av tangens (tan(v) = motstående sida / närliggande sida), kan vi lösa ut motstående sida som: Motstående sida = Närliggande sida * tan(30°) = 5 mm * tan(30°) = 5 mm * 0.577 = 2.89 mm."
+      },
+      {
+          "question": "Lös för n: 20 - 4n + 2 = 14",
+          "answers": [
+              { "text": "n = 1", "incorrectReasoning": "20 - 4*(1) + 2 = 18, inte 14" },
+              { "text": "n = 2", "incorrectReasoning": null },
+              { "text": "n = 3", "incorrectReasoning": "20 - 4*(3) + 2 = 10, inte 14" },
+              { "text": "n = 4", "incorrectReasoning": "20 - 4*(4) + 2 = 6, inte 14" }
+          ],
+          "correctAnswer": 1,
+          "shortReasoning": "Kombinera konstanter: 22 - 4n = 14. Subtrahera 22 från båda sidor: -4n = -8. Dividera båda sidor med -4: n = 2.",
+          "longReasoning": "För att lösa ekvationen 20 - 4n + 2 = 14, kombinera först de konstanta termerna: (20 + 2) - 4n = 14, vilket ger 22 - 4n = 14. Subtrahera sedan 22 från båda sidor: -4n = 14 - 22 = -8. Slutligen, dividera båda sidor med -4: n = -8 / -4 = 2."
+      },
+      {
+          "question": "Beräkna skärbredden (ae) i mm om materialavverkningshastigheten (Q) är 40 cm³/min, skärdjupet (ap) är 4 mm och matningshastigheten (Vf) är 500 mm/min. Använd formeln: ae = (Q * 1000) / (ap * Vf)",
+          "answers": [
+              { "text": "ae = 20 mm", "incorrectReasoning": null },
+              { "text": "ae = 10 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "ae = 40 mm", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "ae = 30 mm", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "ae = (40 cm³/min * 1000) / (4 mm * 500 mm/min) = 20 mm.",
+          "longReasoning": "Formeln för skärbredd är ae = (Q * 1000) / (ap * Vf). Insättning av värden ger ae = (40 * 1000) / (4 * 500) = 40000 / 2000 = 20 mm."
+      },
+      {
+          "question": "Om sin(60°) = 0.866, vad är längden på närliggande sida i en rätvinklig triangel om hypotenusan är 20 mm och vinkeln är 60°?",
+          "answers": [
+              { "text": "10 mm", "incorrectReasoning": null },
+              { "text": "5 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "17.32 mm", "incorrectReasoning": "Detta är motstående sida med sin(60)" },
+              { "text": "20 mm", "incorrectReasoning": "Detta är hypotenusan, inte närliggande sida" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Närliggande sida = hypotenusa * cos(vinkel) = 20 mm * 0.5 = 10 mm.",
+          "longReasoning": "I en rätvinklig triangel är cosinus för en vinkel (cos(v)) definierad som förhållandet mellan längden på den närliggande sidan och hypotenusan. Därför är längden på närliggande sida = hypotenusa * cos(vinkel) = 20 mm * cos(60°) = 20 mm * 0.5 = 10 mm."
+      },
+      {
+          "question": "Lös för p: 5(p - 2) - 2p = 2",
+          "answers": [
+              { "text": "p = 2", "incorrectReasoning": "5*(2-2) - 2*(2) = -4, inte 2" },
+              { "text": "p = 3", "incorrectReasoning": "5*(3-2) - 2*(3) = -1, inte 2" },
+              { "text": "p = 4", "incorrectReasoning": null },
+              { "text": "p = 5", "incorrectReasoning": "5*(5-2) - 2*(5) = 5, inte 2" }
+          ],
+          "correctAnswer": 2,
+          "shortReasoning": "Expandera parentesen: 5p - 10 - 2p = 2. Kombinera p-termer: 3p - 10 = 2. Addera 10 till båda sidor: 3p = 12. Dividera båda sidor med 3: p = 4.",
+          "longReasoning": "För att lösa ekvationen 5(p - 2) - 2p = 2, expandera först parentesen: 5p - 10 - 2p = 2. Kombinera sedan termerna med p: (5p - 2p) - 10 = 2, vilket ger 3p - 10 = 2. Addera sedan 10 till båda sidor: 3p = 2 + 10 = 12. Slutligen, dividera båda sidor med 3: p = 12 / 3 = 4."
+      },
+      {
+          "question": "Beräkna spindelvarvtalet (n) i varv/min om skärhastigheten (Vc) är 150 m/min och diametern (D) på verktyget är 6 mm. Använd formeln: n = (Vc * 1000) / (π * D)",
+          "answers": [
+              { "text": "n = 7958 varv/min", "incorrectReasoning": null },
+              { "text": "n = 3979 varv/min", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "n = 15915 varv/min", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "n = 1500 varv/min", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "n = (150 m/min * 1000) / (3.14159 * 6 mm) = 7958 varv/min.",
+          "longReasoning": "Formeln för spindelvarvtal är n = (Vc * 1000) / (π * D). Insättning av värden ger n = (150 * 1000) / (3.14159 * 6) = 150000 / 18.8495 = 7958 varv/min."
+      },
+      {
+          "question": "Om tan(60°) = 1.732, vad är längden på hypotenusan i en rätvinklig triangel om motstående sida är 8.66 mm och vinkeln är 60°? (Använd Pythagoras sats)",
+          "answers": [
+              { "text": "10 mm", "incorrectReasoning": null },
+              { "text": "5 mm", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "8.66 mm", "incorrectReasoning": "Detta är motstående sida, inte hypotenusan" },
+              { "text": "17.32 mm", "incorrectReasoning": "Detta är dubbla hypotenusan, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Närliggande sida = Motstående sida / tan(60°) = 5mm. Hypotenusa = √(8.66² + 5²) = 10 mm.",
+          "longReasoning": "I en 30-60-90 graders triangel, om motstående sida (60° vinkel) är 8.66 mm, då är närliggande sida = Motstående sida / tan(60°) = 8.66 mm / 1.732 = 5 mm. Enligt Pythagoras sats (a² + b² = c²), där a och b är kateterna och c är hypotenusan, hypotenusan = √(8.66² + 5²) = √(74.9956 + 25) = √99.9956 ≈ 10 mm."
+      },
+      {
+          "question": "Lös för q: 25 - 5q + 3 = 18",
+          "answers": [
+              { "text": "q = 1", "incorrectReasoning": "25 - 5*(1) + 3 = 23, inte 18" },
+              { "text": "q = 2", "incorrectReasoning": null },
+              { "text": "q = 3", "incorrectReasoning": "25 - 5*(3) + 3 = 13, inte 18" },
+              { "text": "q = 4", "incorrectReasoning": "25 - 5*(4) + 3 = 8, inte 18" }
+          ],
+          "correctAnswer": 1,
+          "shortReasoning": "Kombinera konstanter: 28 - 5q = 18. Subtrahera 28 från båda sidor: -5q = -10. Dividera båda sidor med -5: q = 2.",
+          "longReasoning": "För att lösa ekvationen 25 - 5q + 3 = 18, kombinera först de konstanta termerna: (25 + 3) - 5q = 18, vilket ger 28 - 5q = 18. Subtrahera sedan 28 från båda sidor: -5q = 18 - 28 = -10. Slutligen, dividera båda sidor med -5: q = -10 / -5 = 2."
+      },
+      {
+          "question": "Beräkna materialavverkningshastigheten (Q) i cm³/min om skärdjupet (ap) är 2.8 mm, skärbredden (ae) är 11.5 mm och matningshastigheten (Vf) är 625 mm/min. Använd formeln: Q = ap * ae * Vf / 1000",
+          "answers": [
+              { "text": "Q = 20.13 cm³/min", "incorrectReasoning": null },
+              { "text": "Q = 10.06 cm³/min", "incorrectReasoning": "Detta är hälften av rätt värde, kontrollera beräkningen" },
+              { "text": "Q = 40.25 cm³/min", "incorrectReasoning": "Detta är dubbla värdet, kontrollera beräkningen" },
+              { "text": "Q = 25 cm³/min", "incorrectReasoning": "Detta är inte rätt värde, kontrollera beräkningen" }
+          ],
+          "correctAnswer": 0,
+          "shortReasoning": "Q = (2.8 mm * 11.5 mm * 625 mm/min) / 1000 = 20.13 cm³/min.",
+          "longReasoning": "Formeln för materialavverkningshastighet är Q = ap * ae * Vf / 1000. Insättning av värden ger Q = (2.8 * 11.5 * 625) / 1000 = 20125 / 1000 = 20.13 cm³/min."
+      }
+  ]
   }
 ]
